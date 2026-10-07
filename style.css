@@ -1,0 +1,46 @@
+body {
+    background-color: pink;
+
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+ul nav{
+    float: left;
+}
+
+ul nav a {
+    display: block;
+    color:aqua;
+    padding: 12px 16px;
+    text-align:center;
+    text-decoration: none;
+}
+
+ul nav a:hover{
+    background-color:pink;
+}
+
+figcaption {
+    background-color:pink;
+    color:blueviolet;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 2px;
+
+}
