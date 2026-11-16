@@ -43,12 +43,17 @@ ul {
     overflow: hidden;
     background-color: transparent;
 }
+nav{
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
 
-nav ul li{
+nav ul li{ /*The nav bars location and its display on the page*/
     float: left;
 }
 
-nav ul li a {
+nav ul li a { /*Styling for the nav bar*/
     display: inline-block;
     color:orange;
     padding: 15px 20px;
@@ -57,26 +62,28 @@ nav ul li a {
     font-size: 30px;
     font-weight: bold;
     text-decoration: underline;
+    font-family: Special Gothic Expanded One, sans-serif;
 }
+    
 
-nav ul li a:hover{
+nav ul li a:hover{ /*The hover effect over the nav bar; what happens when the mouse hovers over it*/
     background-color:pink;
 }
 
-figcaption {
-    background-color:transparent;
+figcaption { /*Styling for the text in the text boxes*/
+    background-color: transparent;
     color:blueviolet;
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding: 2px;
 
 }
 
-figure, picture {
+figure, picture { /*Styling for the box that holds the images and texts*/
   position: static; 
   display: block;
 }
 
-figure img {
+figure img { /*Styling for the images; the box and its edits*/
   display: block;
   width: 400px; 
   height: 500px; 
@@ -85,7 +92,7 @@ figure img {
  
 }
 
-figcaption {
+figcaption { /*Styling for the text on the images*/
   position: relative;
   display: block;
   /* Pulls the button up so it climbs on top of the image above it */
@@ -110,6 +117,86 @@ figcaption {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+
+.pricing.body { /*Removes default white borders around the edges of your webpage */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x:hideen;
+  padding-top: 45px;/*Adds space for the announcement bar*/
+}
+
+.announcement-bar { /*Creates the solid dark top banner */
+  background-color: #B2AC88;
+  color: #e0c2e2;
+  width: 100%;
+  padding: 12px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  box-sizing: border-box;
+  top: 0;
+  left:0;
+  right:0;
+  font-family: Special Gothic Expanded One, sans-serif;
+}
+
+
+.gliding-text { /*Styles the text and starts the gliding movement */
+  display: inline-block;
+  padding-left: 100%;
+  font-family: Special Gothic Expanded One, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  animation: slideLeft 15s linear infinite;
+}
+
+
+.announcement-bar:hover .gliding-text { /*Pauses the text when someone hovers their mouse over it */
+  animation-play-state: paused;
+}
+
+
+@keyframes slideLeft { /*Moves the text from right to left */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    color: #333333;             
+    max-width: 600px; /* Prevents the textbox from stretching too wide */
+    margin: 20px auto; /* Centers the textbox on your page and adds vertical breathing room */
+    padding: 20px 25px;           
+    border: 1px solid black;   
+    border-radius: 16px;         
+    box-shadow: 0 4px 12px black; 
+}
+img{
+    border: 10px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutme-text{
+    font-size: 40px;
+    font-family: Special Gothic Expanded One, sans-serifn;
+    text-shadow: 2px 2px 4px grey;
+}
 
 
 
